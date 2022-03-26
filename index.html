@@ -13,11 +13,18 @@
 <body>
     <!-- primeiro passo o usuário vai ter um botão que vai definir uma nova palavra -->
     <button onclick="createWord();">Nova Palavra</button>
+    <button onclick="removeWord();">Remover Palavra</button>
     <div id="boxWord"></div>
     <div>
         <input type="text" id="letraChute" class="boxSize" />
-        <button>Jogar</button>
-        <button>Dica</button>
+        <button onclick="checkWordType();">Jogar</button>
+        <button onclick="mostrarDica();">Dica</button>
+        <div id="dica"></div>
+    </div>
+    <div id="boneco">
+        <div id="cabeca"></div>
+        <div id="tronco"></div>
+
     </div>
 
 </body>
